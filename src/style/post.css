@@ -1,5 +1,29 @@
-img{
-    border-radius: 50%;
-    height: 20vh;
-    width: 10vw;
+img {
+  border-radius: 50%;
+  height: 20vh;
+  width: 10vw;
+  margin-top: 10px;
+}
+
+div {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+div#post {
+  width: 20vw;
+  height: 50vh;
+}
+
+header {
+  width: 30vw;
+  margin-bottom: 70px;
+  margin-left: 60vw;
+  display: flex;
+  justify-content: end;
+}
+
+header h1{
+    margin-right: 30vw;
+    width: 30vw;
 }
