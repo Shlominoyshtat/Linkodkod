@@ -1,11 +1,15 @@
 import './App.css'
 import './style/post.css'
 import Post from './components/post'
+import Main from './components/main'
+// import PostsPage from './components/PostsPage'
 
 function App() {
   return (
     <>
-      <Post name='Sheri'/>
+      <Main />
+      <Post name='Cheri'/>
+      {/* <PostsPage /> */}
     </>
   )
 }
