@@ -4,7 +4,8 @@ export default function Post(props: any) {
   const [count, setCount] = useState(0);
   const date = new Date().toLocaleString("he-IL");
   return (
-    <div id="post">
+    <section className="app">
+    <div id="post" className="main">
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9w9V3UCoL0C83Zn_n8YMhmrUTjrq83SHg6Q&s"
         alt="image to Charon Sheri"
@@ -16,5 +17,6 @@ export default function Post(props: any) {
         {count} 
       </p>
     </div>
+    </section>
   );
 }
