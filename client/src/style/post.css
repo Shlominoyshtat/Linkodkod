@@ -1,4 +1,4 @@
-img {
+#phase {
   border-radius: 50%;
   height: 100px;
   width: 9vw;
@@ -20,12 +20,13 @@ header {
   margin-bottom: 70px;
   display: flex;
   justify-content: end;
-  background-color: aquamarine;
+  background-color: rgba(4, 50, 9, 0.365);
   border-radius: 10px;
 }
 
 header h1 {
   font-size: 3.2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin-left: 20vw;
   width: 60vw;
   flex-grow: 1;
@@ -39,18 +40,32 @@ header img {
 .main {
   background-color: antiquewhite;
   text-align: center;
+  transition: 0.5s;
 }
 
 main {
   background-color: rgb(244, 196, 123);
+  background-image: url('main.jpeg');
   border-radius: 10px;
   justify-items: center;
 }
 
 #root {
-  background-color: chartreuse;
+  background-color: rgba(62, 92, 247, 0.635);
 }
 
 #iconKodkod {
+  height: 100px;
+  width: 9vw;
+  margin-top: 10px;
   border-radius: 5px;
+}
+
+.main:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRig6vJAXPGNM8E_s99IoymnKpIz6q3X9CbFQ&s");
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  font-weight: 550;
 }
