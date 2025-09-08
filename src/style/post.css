@@ -1,7 +1,7 @@
 img {
   border-radius: 50%;
-  height: 140px;
-  width: 10vw;
+  height: 100px;
+  width: 9vw;
   margin-top: 10px;
 }
 
@@ -49,4 +49,8 @@ main{
 
 #root{
     background-color: chartreuse;
+}
+
+#iconKodkod{
+    border-radius: 5px;
 }
