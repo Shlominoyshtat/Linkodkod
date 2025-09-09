@@ -1,16 +1,15 @@
-import express from 'express';
-import ReadPosts from './postService.js';
+import express from "express";
+import { readById } from "./contriler.js";
+import { ReadData } from "./postService.js";
 
 const router = express.Router();
 
-router.get('/read',async (req,res) => {
-    try{
-    const data = await ReadPosts()
-    res.send(data);
-    console.log('read file seccessfuly') 
-    } catch{
-        res.status(500).json({message:"the server is error"})
-    }
-})
+router.get("/read", async (req, res) => {
+  res.send(await ReadData());
+});
+
+router.get("/read/:id", async (req, res) => {
+    res.send(await readById(req.params.id))
+});
 
 export default router;
