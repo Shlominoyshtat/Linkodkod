@@ -3,7 +3,6 @@ import { ReadPostById } from "./postService.js";
 
 export async function ReadPost(){
     try{
-    // const data = await ReadPosts();await ReadPosts()
     console.log('read file seccessfuly') 
     return posts;
     } catch{

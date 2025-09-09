@@ -1,18 +1,16 @@
 import { useEffect, useState } from "react";
 import Like from "./like.tsx";
 import funFetch from "./utils/fetch.tsx";
-// import { postArray } from "./posts.ts";
 
 export default function PostsPage() {
   const [post, setPost] = useState<post[]>([]);
-  const [error, setError] = useState(null);
   useEffect(() => {
     async function readPost() {
       try {
         const data = await funFetch("http://localhost:3000/read");
         setPost(data);
       } catch (err: any) {
-        setError(err);
+        console.error("error thr useEffect",err)
       }
     }
     readPost();
