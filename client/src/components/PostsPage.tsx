@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import Like from "./like.tsx";
 import funFetch from "./utils/fetch.tsx";
+import { useNavigate } from "react-router";
 
 export default function PostsPage() {
+  const navigate = useNavigate()
   const [post, setPost] = useState<post[]>([]);
   useEffect(() => {
     async function readPost() {
@@ -17,8 +19,8 @@ export default function PostsPage() {
   }, []);
 
   return post.map((post) => (
-    <section className="app">
-      <div id="post" key={post.id} className="main">
+    <section className="app" >
+      <div id="post" key={post.id} className="mainDiv" onClick={()=> navigate('/post/'+post.id)}>
         <img src={post.img} alt="" id="phase" />
         <figcaption>{post.figcaption}</figcaption>
         <p>name: {post.name}</p>

@@ -9,7 +9,7 @@ router.get("/read", async (req, res) => {
 });
 
 router.get("/read/:id", async (req, res) => {
-    res.send(await readById(req.params.id))
+    res.json(await readById(req.params.id))
 });
 
 export default router;
