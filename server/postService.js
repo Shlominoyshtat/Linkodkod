@@ -1,27 +1,20 @@
-// import fs from "fs/promises";
-import { ReadPost } from "./contriler.js";
+import { ReadPost } from "./controller.js";
 import { posts } from "./posts.js";
 
 export async function ReadData() {
-//   return fs.readFile("./posts.js", "utf8", (err, data) => {
-    // if (err) {
-    //   console.error("Error reading file: ", err);
-    // }
-    // console.log("File content: ", data);
     return await ReadPost();
-//   });
 }
 
 export async function ReadPostById(req) {
   try {
     const idNum = parseInt(req);
-    const resoult = posts.find((p) => p.id === idNum);
-    if (resoult.id === idNum) {
-      return resoult;
+    const result = posts.find((p) => p.id === idNum);
+    if (result.id === idNum) {
+      return result;
     } else {
-      console.error("error the complient");
+      console.error("The id is not compatible with");
     }
   } catch {
-    return "The id is not compatible with";
+    return "Error checking the id";
   }
 }

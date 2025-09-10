@@ -8,7 +8,7 @@ server.use(express.json())
 
 server.use(cors())
 
-server.use('/static',express.static('public'))
+server.use(express.static('public'))
 
 server.use('/',router);
 

@@ -3,7 +3,7 @@ import { ReadPostById } from "./postService.js";
 
 export async function ReadPost(){
     try{
-    console.log('read file seccessfuly') 
+    console.log('read file successfully') 
     return posts;
     } catch{
        console.error("the server is error")
@@ -15,6 +15,6 @@ export async function readById(req){
         const data = await ReadPostById(req)
         return data;
     } catch {
-        console.error('erroe is connect')
+        console.error('error is connect')
     }
 }

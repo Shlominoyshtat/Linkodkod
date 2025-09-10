@@ -1,5 +1,5 @@
 import express from "express";
-import { readById } from "./contriler.js";
+import { readById } from "./controller.js";
 import { ReadData } from "./postService.js";
 
 const router = express.Router();
