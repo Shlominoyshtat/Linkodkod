@@ -37,7 +37,7 @@ header img {
   margin-right: 30px;
 }
 
-.main {
+.mainDiv {
   background-color: antiquewhite;
   text-align: center;
   transition: 0.5s;
@@ -61,7 +61,7 @@ main {
   border-radius: 5px;
 }
 
-.main:hover{
+.mainDiv:hover{
   transform: scale(1.1);
   cursor: pointer;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRig6vJAXPGNM8E_s99IoymnKpIz6q3X9CbFQ&s");
@@ -94,4 +94,11 @@ button.link{
   border-radius: 10px;
   height: 4vh;
   width: 10vw;
+}
+
+.mainUrl{
+  background-color: antiquewhite;
+  border-radius: 20px;
+  text-align: center;
+  color: rgb(245, 68, 118);
 }

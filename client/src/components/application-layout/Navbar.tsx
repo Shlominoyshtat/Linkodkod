@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       <button className='link' onClick={() => navigate('/')}>home</button>
       <button className='link' onClick={() => navigate('/login')}>Login</button>
-      <button className='link' onClick={() => navigate('/post')}>get post</button>
+      <button className='link' onClick={() => navigate('/')}>Sign in</button>
     </>
   );
 }
