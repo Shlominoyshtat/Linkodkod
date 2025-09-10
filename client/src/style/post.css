@@ -16,12 +16,12 @@ div#post {
   margin-top: 10px;
 }
 
-header {
+#header {
   margin-bottom: 70px;
   display: flex;
   justify-content: end;
   background-color: rgba(4, 50, 9, 0.365);
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 header h1 {
@@ -46,7 +46,7 @@ header img {
 main {
   background-color: rgb(244, 196, 123);
   background-image: url('main.jpeg');
-  border-radius: 10px;
+  border-radius: 3px;
   justify-items: center;
 }
 
@@ -70,9 +70,28 @@ main {
   font-weight: 550;
 }
 
+button.link{
+  background-color: rgba(0, 0, 255, 0.58);
+  color: rgb(5, 224, 151);
+  height: 30px;
+  margin-left: 22vw;
+  cursor: alias;
+}
 
+#logH1{
+  color: aliceblue;
+  font-size: 3rem;
+}
 
-#links button{
-  color: rgb(7, 119, 82);
-  margin-left: 380px;
+.input{
+  display:block;
+  background-color: aquamarine;
+}
+
+#btnInput{
+  display: block;
+  background-color: aqua;
+  border-radius: 10px;
+  height: 4vh;
+  width: 10vw;
 }

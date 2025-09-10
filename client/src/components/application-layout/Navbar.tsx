@@ -1,11 +1,13 @@
-// import { useNavigate } from "react-router"
+import { useNavigate } from "react-router"
 
 export default function Navbar() {
-    // let navigate = useNavigate()
+    let navigate = useNavigate()
   return (
-    <section id="links">
-      <button>home</button>
-      <button>get post</button>
-    </section>
+    <>
+      <button className='link' onClick={() => navigate('/')}>home</button>
+      <button className='link' onClick={() => navigate('/login')}>Login</button>
+      <button className='link' onClick={() => navigate('/post')}>get post</button>
+    </>
   );
 }
+
